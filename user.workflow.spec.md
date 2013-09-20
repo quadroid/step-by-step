@@ -1,159 +1,164 @@
-_Todo Application_
-==================
-This is simple todo application/module/widget. **add_Item_** to start.
+Todo Application
+=================
+This is simple todo application/module/widget. _addItem_ to start.
 
-Use: Widget(**don't** _watch_), _Bootstrap_.  
-View: **addItem**. _Items List_. __Status Widget__.  
+Use: Widget, Bootstrap.  
+View: _addItem_. [Items List]. [Status Widget].  
 View-mode: block inline
-    
-## **add_Item_ Widget**
-View: __todo Field__, __Add Button__.
 
-1. **input** some text into the __todo Field (up to 36 symbols, No _watch_)__
-2. **press** Enter OR **click** __Add Button__
+## _addItem Widget_
+View: [todo Field], [add Button].
 
-> **new** _Item_ (**input** _text_ from __todo Field__) should be **add**ed to the _Items List_.   
-> And __todo__ will be **clear**ed.
+1. _input_ some text into the [todo Field (up to 36 symbols, No _watch_)]
+2. _press_ Enter OR _click_ [add Button]
 
-## _*Item*s List Widget_
-View: _check Box_, _text Field (up to 36 symbols)_, __delete Button__.
-### **delete**
+> _new_ [Item (_set_ [text] from [todo Field])] should be _add_ed to the [Items List].   
+> And [todo] will be _clear_ed.
 
-1. **click** on the __delete Button__
+## [Item]s List Widget
+View: [check Box], [text Field (up to 36 symbols)], [delete Button].
 
-> _Item_ will be **delete**d from _Items List_.
+### _delete_
 
-## __Status Widget__
-View: _Items_ **count**, _Items_ (_complete_d **only**) **count** (IF only >0).
+* _click_ on the [delete Button]
+
+> [Item] will be _delete`d from_ [Items List].
+
+## Status Widget
+View: [Items] _count_, [Items (_only_ [checked])] _count_ (IF only >0).
 
 
-_Application Language_
+Application Language
 =======================
 Use: Html, JavaScript
-## _Widget_
+## Widget
 watch: Yes — update value from/to server, when modified.
-## _Storage_
-### _Local Storage_
-### _Express Storage_
+## Storage
+### Local Storage
+### Express Storage
 
-_Html Language_
+Html Language
 ===============
 
-## _Widget_
-View: "LABEL" OR _List of Item_
+## Widget
+View: "LABEL" OR [List of Item`s]
 Template of Widget. See template folder of module.
-**click**
-## _List Widget_
+_click_
+## List Widget
 View: "UL"
-## _Item List Widget_
+## Item List Widget
 View: "LI"
 
-## __Button Widget__
+## Button Widget
 View: "BUTTON"
 
-## _Field Widget_
+## Field Widget
 Simple text field.
 View: "INPUT"
-_value_: Text
-### **input**    
-1. **click** on the _Field_
-2. **input** some text into the _Field_ 
-3. **lost focus**
+value: Text
+### _input_    
+1. _click_ on the [Field]
+2. _input_ some text into the [Field] 
+3. _lost focus_
 
-## _Box Widget_
+## Box Widget
 Checkbox.
 View: "INPUT[type=checkbox]"
-_checked_: No
-### **toggle**
-- **click** on the _Box_
-IF _checked_:
-**set** No _checked_.
-ELSE:
-**set** _checked_.
+checked: No
+### _toggle_
+* _click_ on the [Box]
+
+> IF [checked]:
+  _set_ No [checked].
+  ELSE:
+  _set_ [checked].
    
-_Language_
+Language
 ==========
 Step By Step language specification.  
 The basic module, incapsulates programming language.
 
-## _Item_
+## Item
 Basic type in SBS. The parent of all types.
 value: Unknown
-Use: (_Language_) _List_ — List of dependencies.
+Use: (Language) List — List of dependencies.
 
-**new**
+### _new_
 creates new Item.
-**set**
+### _set_
 sets the value.
 
-## _Action_
-before steps: _List of Item and Action_ — Events
-do: _List of Item and Action_ — 
+## Action
+before steps: [List of Item and Action] — Events
+do: [List of Item and Action] — 
 
-## _List_
-The collection of _Item_s.
-**delete _List.Item_ from _List_**
-### _Item_
+## List
+The collection of [Item]s.
+### _delete [List.Item] from [List]_
+### _only_
+Filter list.
+
+### Item
 idx: 0
-## _Text_
+## Text
 value: ""
-## _Number_
+## Number
 value: 0
-## _Boolean_
+## Boolean
 value: Yes
-**don't**
-## _No  Boolean_
-## _Yes Boolean_
-## _Unknown_
+### dont
+## No  Boolean
+## Yes Boolean
+## Unknown
 
-_JavaScript Language_
+JavaScript Language
 =====================
 
-## _Item_
+## Item
 ```javascript
 Object
 ```
-**new**
-**set**
-## _Action_ 
+### _new_
+### _set_
+## Action 
 ```javascript
 Function
 ```      
-## _Text_
+## Text
 ```javascript
 String
 ```    
-## _Number_
+## Number
 ```javascript
 Number
 ``` 
-## _Boolean_
+## Boolean
 ```javascript
 Boolean
 ```
-**don't**
+### _dont_
 ```javascript
 ! this
 ```
-## _No Boolean_
+## No Boolean
 ```javascript
 false
 ``` 
-## _Yes Boolean_
+## Yes Boolean
 ```javascript
 true
 ```     
-## _Unknown_
+## Unknown
 ```javascript
 undefined
 ```
 
-## __Versions__
+## Versions
 
-### _ECMA3 JavaScript_
-### _ECMA3 JavaScript_
-### _ECMA5 JavaScript_
-### _ECMA5proto JavaScript_
-### _ECMA6 JavaScript_
-### _V8 JavaScript_
+### ECMA3 JavaScript
+### ECMA3 JavaScript
+### ECMA5 JavaScript
+### ECMA5proto JavaScript
+### ECMA6 JavaScript
+### V8 JavaScript
 JavaScript, optimized for V8 engine (Google Chrome, NodeJS, Opera 15+).
