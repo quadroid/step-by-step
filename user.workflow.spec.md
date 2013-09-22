@@ -1,12 +1,12 @@
 Todo Application
 =================
-This is simple todo application/module/widget. _addItem_ to start.
+This is simple todo application/module/widget. _create item_ to start.
 
-Use: Widget, Bootstrap.  
-View: _addItem_. [Items List]. [Status Widget].  
+Use: Bootstrap.  
+View: _create record_. [Records List]. [Status Widget].  
 View-mode: block inline
 
-## _addItem Widget_
+## _create record_ Widget
 View: [todo Field], [add Button].
 
 1. _input_ some text into the [todo Field (up to 36 symbols, No _watch_)]
@@ -15,17 +15,17 @@ View: [todo Field], [add Button].
 > _new_ [Item (_set_ [text] from [todo Field])] should be _add_ed to the [Items List].   
 > And [todo] will be _clear_ed.
 
-## [Item]s List Widget
-View: [check Box], [text Field (up to 36 symbols)], [delete Button].
+## Records List Widget
+View: [check Box], [text Field (up to 36 symbols)], [X Button].
 
 ### _delete_
 
-* _click_ on the [delete Button]
+* _click_ on the [X Button]
 
-> [Item] will be _delete`d from_ [Items List].
+> [Record] will be _delete`d from_ [Records List].
 
 ## Status Widget
-View: [Items] _count_, [Items (_only_ [checked])] _count_ (IF only >0).
+View: [Records] _count_, [Records (_only_ [check]ed)] _count_ (IF only >0).
 
 
 Application Language
