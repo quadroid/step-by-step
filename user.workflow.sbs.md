@@ -3,11 +3,10 @@ Todo Application
 This is simple todo application/module/widget. _create item_ to start.
 
 Use: Bootstrap.  
-View: _create record_. Records List. Status Widget.  
-View-mode: block inline
+Contain: _create record_. Records List. Status Widget.  
 
 ## _create record_ Widget
-View: todo Field, add Button.
+Contain: todo Field, add Button.
 
 1. _input_ some text into the [todo Field (up to 36 symbols, No _watch_)]
 2. _press_ Enter OR _click_ [add Button]
@@ -16,7 +15,7 @@ View: todo Field, add Button.
 > And [todo] will be _clear_ed.
 
 ## Records List Widget
-View: check Box, text Field (up to 36 symbols), X Button.
+Contain: check Box, text Field (up to 36 symbols), X Button.
 
 ### _delete_
 
@@ -25,7 +24,7 @@ View: check Box, text Field (up to 36 symbols), X Button.
 > [Record] will be _delete`d from_ [Records List].
 
 ## Status Widget
-View: Records _count_, _only_ check'ed Records _count_.
+Contain: Records _count_, _only_ check'ed Records _count_.
 
 
 Application Language
